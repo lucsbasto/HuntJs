@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "./styles.css";
 import api from "../../services/api";
 
@@ -33,7 +34,6 @@ export default class Main extends Component {
     };
     render() {
         const { products, page, product_info } = this.state;
-        console.log("aa", page, product_info);
         return (
             <div className="product-list">
                 {products.map(product => {
@@ -41,7 +41,7 @@ export default class Main extends Component {
                         <article key={product._id} className="product-list">
                             <strong>{product.title}</strong>
                             <p>{product.description}</p>
-                            <a href="#">Acessar</a>
+                            <Link to={`/products/${product._id}`}>Acessar</Link>
                         </article>
                     );
                 })}
