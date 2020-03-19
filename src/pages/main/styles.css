@@ -61,7 +61,8 @@
     background-color: #da552f;
     color: #fff;
     box-shadow: 0 7px 10px rgba(0, 0, 0, .2);
-    border: none
+    border: none;
+    cursor: pointer;
 }
 
 .product-list .actions button:active {
@@ -75,4 +76,9 @@
     border: none;
     transform: translateY(1px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.product-list .actions button:disabled {
+    opacity: 0.5;
+    cursor: default;
 }
