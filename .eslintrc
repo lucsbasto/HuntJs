@@ -1,0 +1,12 @@
+{
+    "extends": ["airbnb", "prettier", "react-app"],
+    "plugins": ["prettier"],
+    "rules": {
+        "no-unused-vars": "warn",
+        "no-console": "off",
+        "prettier/prettier": "error",
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    }
+}

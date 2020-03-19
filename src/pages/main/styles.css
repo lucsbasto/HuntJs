@@ -1,0 +1,78 @@
+.product-list {
+    max-width: 700px;
+    margin: 20px auto 0;
+    padding: 0 20px;
+}
+
+.product-list article {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.product-list article p {
+    color: #9999;
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.product-list article a {
+    margin-top: 10px;
+    height: 42px;
+    font-size: 16px;
+    color: #da552f;
+    border: 2px solid #da552f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all .2s;
+}
+
+.product-list article a:hover {
+    background-color: #da552f;
+    color: #fff;
+    box-shadow: 0 7px 10px rgba(0, 0, 0, .2);
+}
+
+.product-list article a:active {
+    color: #fff;
+    border: 2px solid #da552f;
+    transform: translateY(1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.product-list .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.product-list .actions button {
+    outline-offset: 0px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #da552f;
+    color: #fff;
+    box-shadow: 0 7px 10px rgba(0, 0, 0, .2);
+    border: none
+}
+
+.product-list .actions button:active {
+    outline-offset: 0px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #da552f;
+    color: #fff;
+    border: none;
+    transform: translateY(1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
